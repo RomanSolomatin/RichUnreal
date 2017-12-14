@@ -30,9 +30,9 @@ void FAttribute::SetValue(int32 NewValue)
 		EValueSignState ValueSignState(EValueSignState::SAME_SIGN);
 		if (OldValue > 0 && Value <= 0)
 		{
-			ValueSignState = EValueSignState::BECAME_NEGATIVE;
+			ValueSignState = EValueSignState::BECAME_ZERO_NEGATIVE;
 		}
-		else if (OldValue < 0 && Value >= 1)
+		else if (OldValue < 1 && Value >= 1)
 		{
 			ValueSignState = EValueSignState::BECAME_POSITIVE;
 		}

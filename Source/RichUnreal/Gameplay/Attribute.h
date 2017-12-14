@@ -9,7 +9,7 @@
 UENUM(/*BlueprintType*/)
 enum class EValueSignState : uint8
 {
-	BECAME_NEGATIVE,
+	BECAME_ZERO_NEGATIVE,
 	BECAME_POSITIVE,
 	SAME_SIGN,
 };
